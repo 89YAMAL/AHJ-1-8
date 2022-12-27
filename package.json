@@ -1,0 +1,54 @@
+{
+  "name": "ahj-1-8",
+  "version": "1.0.0",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/fq0q41w3hte7tpi8?svg=true)](https://ci.appveyor.com/project/89YAMAL/ahj-homework)",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/89YAMAL/AHJ-1-8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/89YAMAL/AHJ-1-8/issues"
+  },
+  "homepage": "https://github.com/89YAMAL/AHJ-1-8#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "core-js": "^3.27.0"
+  },
+  "jest": {
+    "testEnviroment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/mocks/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/src/mocks/styleMock.js"
+    }
+  }
+}
